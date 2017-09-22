@@ -1,0 +1,16 @@
+<html>
+    <script>
+        document.onkeypress = function(e) {
+            var timestamp = Date.now() | 0;
+            var stroke = {
+                k: e.key,
+                t: timestamp
+            };
+            
+            console.log(stroke.k);
+        }
+    </script>
+    <body>
+        <input type="text" />
+    </body>
+</html>

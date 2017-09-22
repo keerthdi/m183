@@ -1,0 +1,34 @@
+<html>
+    <script>
+        function createLoginForm() {
+            var x = document.createElement("FORM");
+            x.setAttribute("id", "loginForm");
+            document.body.appendChild(x);
+
+            var y = document.createElement("INPUT");
+            y.setAttribute("type", "text");
+            y.setAttribute("name", "username");
+            document.getElementById("loginForm").appendChild(y);
+            
+            var z = document.createElement("INPUT");
+            z.setAttribute("type", "password");
+            z.setAttribute("name", "password");
+            document.getElementById("loginForm").appendChild(z);
+            
+            var v = document.createElement("INPUT");
+            v.setAttribute("type", "submit");
+            v.setAttribute("name", "submit");
+            v.setAttribute("value", "Login");
+            document.getElementById("loginForm").appendChild(v);
+            
+            document.getElementById("loginForm").addEventListener("submit", myFunction);
+        }
+        
+        function myFunction() {
+            alert("The form was submitted");
+        }
+    </script>
+    <body onload="createLoginForm()">
+        
+    </body>
+</html>
